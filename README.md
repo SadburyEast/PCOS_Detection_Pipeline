@@ -81,11 +81,14 @@ python main.py --data-path path/to/data.xlsx --sheet-name Full_new
 
 | Model | CV ROC-AUC | Test ROC-AUC | Test Accuracy |
 |---|---|---|---|
-| _fill in_ | | | |
+| Random Forest | 0.958 | 0.939 | 0.908 |
+| Logistic Regression | 0.949 | 0.952 | 0.909 |
+| Gradient Boosting | 0.946 | 0.954 | 0.917 |
+| XGBoost | 0.944 | 0.944 | 0.908 |
 
-**Best model:** _fill in_ · **Best parameters:** _fill in_
+**Best model:** Random Forest · **Best parameters:** "max_depth": 10, "min_samples_leaf": 1, "n_estimators": 300 
 
-**Top predictive features:** _fill in_ (see `outputs/feature_importance.csv`)
+**Top predictive features:** Follicle Numbers, Hair Growth and Cycle (Regular/Irregular)
 
 ## Tech stack
 
